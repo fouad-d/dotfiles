@@ -1,0 +1,80 @@
+#!/bin/sh
+
+# Use neovim for vim if present.
+[ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	mkd="mkdir -pv" \
+	yt="youtube-dl --add-metadata -i" \
+	yta="yt -x -f bestaudio/best" \
+	ffmpeg="ffmpeg -hide_banner"
+
+# Colorize commands when possible.
+# Changing "ls" to "exa"
+alias \
+ 		ls='exa -al --color=always --group-directories-first' \
+ 		la='exa -a --color=always --group-directories-first'  \
+ 		ll='exa -l --color=always --group-directories-first'  \
+ 		lt='exa -aT --color=always --group-directories-first' \
+		l.='exa -a | egrep "^\."'\
+
+# Colorize grep output (good for log files)
+alias \
+	 grep='grep --color=auto' \
+   egrep='egrep --color=auto' \
+ 	 fgrep='fgrep --color=auto' \
+
+# pacman and yay
+alias \
+	p="sudo pacman" \
+	ysua="yay -Sua --noconfirm"  \
+	ysyu="yay -Syu --noconfirm"  \
+  xi="sudo xbps-install" \
+	xr="sudo xbps-remove -R" \
+	xq="xbps-query" \
+	mirror=" sudo reflector -c Germany -c France -a 12 -p https -p http --sort rate --save /etc/pacman.d/mirrorlist"  \
+
+# These common commands are just too long! Abbreviate them.
+alias \
+	ka="killall" \
+	g="git" \
+	trem="transmission-remote" \
+	YT="youtube-viewer" \
+	sdn="sudo shutdown -h now" \
+	f="$FILE" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	z="zathura"
+
+alias \
+	magit="nvim -c MagitOnly" \
+	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" \
+	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
+	tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf" \
+
+# adding flags
+alias \
+		df='df -h'  \
+		free='free -m'  \
+   	                  
+# switch between shells
+alias \
+	tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"  \
+  tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"  \
+  tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"  \
+
+## get top process eating memory
+alias \
+	psmem='ps auxf | sort -nr -k 4'  \
+	psmem10='ps auxf | sort -nr -k 4 | head -10'  \
+
+## get top process eating cpu ##
+alias \
+	pscpu='ps auxf | sort -nr -k 3'  \
+	pscpu10='ps auxf | sort -nr -k 3 | head -10'  \
+
+
