@@ -1,0 +1,12 @@
+hash -d cac=/home/fouad/.cache 
+hash -d cf=/home/fouad/.config 
+hash -d D=/home/fouad/Downloads 
+hash -d d=/home/fouad/Documents 
+hash -d dt=/home/fouad/.local/share 
+hash -d h=/home/fouad 
+hash -d m=/home/fouad/Music 
+hash -d mn=/mnt 
+hash -d pp=/home/fouad/Pictures 
+hash -d sc=/home/fouad/.local/bin 
+hash -d src=/home/fouad/.local/src 
+hash -d vv=/home/fouad/Videos 

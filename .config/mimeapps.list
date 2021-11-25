@@ -1,0 +1,19 @@
+[Added Associations]
+application/x-shellscript=geany.desktop;
+image/jpeg=gimp.desktop;sxiv.desktop;org.inkscape.Inkscape.desktop;
+image/png=gimp.desktop;org.inkscape.Inkscape.desktop;sxiv.desktop;
+text/plain=visual-studio-code.desktop;geany.desktop;mpv.desktop;
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+text/html=brave-browser.desktop;geany.desktop;
+image/svg+xml=org.inkscape.Inkscape.desktop;
+application/x-wonderswan-rom=mpv.desktop;
+image/gif=sxiv.desktop;
+application/vnd.ms-publisher=geany.desktop;
+
+[Default Applications]
+image/png=sxiv.desktop
+text/plain=geany.desktop
+application/pdf=org.pwmt.zathura-pdf-mupdf.desktop
+application/x-wonderswan-rom=mpv.desktop
+image/gif=sxiv.desktop
+image/jpeg=sxiv.desktop
