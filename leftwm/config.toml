@@ -1,0 +1,488 @@
+modkey = "Mod4"
+workspaces = []
+tags = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+[[keybind]]
+command = "SoftReload"
+modifier = ["Mod1"]
+key = "r"
+
+#I use dmenu script
+#[[keybind]]
+#command = "Execute"
+#value = "pkill leftwm"
+#modifier = ["Mod1"]
+#key = "q"
+
+[[keybind]]
+command = "CloseWindow"
+modifier = ["modkey"]
+key = "q"
+
+[[keybind]]
+command = "ToggleFullScreen"
+modifier = ["modkey"]
+key = "f"
+
+[[keybind]]
+command = "ToggleScratchPad"
+value = "Alacritty" # Name set for the scratchpad
+modifier = ["modkey","Shift"]
+key = "p"
+
+[[keybind]]
+command = "DecreaseMainWidth"
+value = "5"
+modifier = ["modkey","Shift"]
+key = "a"
+
+[[keybind]]
+command = "IncreaseMainWidth"
+value = "5"
+modifier = ["modkey"]
+key = "a"
+
+[[keybind]]
+command = "FloatingToTile"
+modifier = ["modkey", "Shift"]
+key = "t"
+
+[[keybind]]
+command = "SetLayout"
+value = "Monocle"
+modifier = ["Mod1"]
+key = "m"
+
+[[keybind]]
+command = "SetLayout"
+value = "Fibonacci"
+modifier = ["Mod1"]
+key = "f"
+
+######################
+[[keybind]]
+command = "MoveToLastWorkspace"
+modifier = ["modkey", "Shift"]
+key = "semicolon"
+
+[[keybind]]
+command = "SwapTags"
+modifier = ["modkey"]
+key = "comma"
+
+[[keybind]]
+command = "MoveWindowUp"
+modifier = ["modkey", "Shift"]
+key = "k"
+
+[[keybind]]
+command = "MoveWindowDown"
+modifier = ["modkey", "Shift"]
+key = "j"
+
+[[keybind]]
+command = "MoveWindowTop"
+modifier = ["modkey"]
+key = "space"
+
+[[keybind]]
+command = "FocusWindowUp"
+modifier = ["modkey"]
+key = "k"
+
+[[keybind]]
+command = "FocusWindowDown"
+modifier = ["modkey"]
+key = "j"
+
+[[keybind]]
+command = "NextLayout"
+modifier = ["modkey"]
+key = "Tab"
+
+[[keybind]]
+command = "PreviousLayout"
+modifier = ["modkey", "Shift"]
+key = "Tab"
+
+[[keybind]]
+command = "FocusWorkspaceNext"
+modifier = ["modkey"]
+key = "Right"
+#key = "exclam"
+
+[[keybind]]
+command = "FocusWorkspacePrevious"
+modifier = ["modkey"]
+key = "Left"
+#key = "colon"
+
+###################
+#swithtag
+[[keybind]]
+command = "GotoTag"
+value = "1"
+modifier = ["modkey"]
+key = "KP_End"
+#ampersand
+
+[[keybind]]
+command = "GotoTag"
+value = "2"
+modifier = ["modkey"]
+key = "KP_Down"
+#eacute
+
+[[keybind]]
+command = "GotoTag"
+value = "3"
+modifier = ["modkey"]
+key = "KP_Next"
+#quotedbl
+
+[[keybind]]
+command = "GotoTag"
+value = "4"
+modifier = ["modkey"]
+key = "KP_Left"
+#apostrophe
+
+[[keybind]]
+command = "GotoTag"
+value = "5"
+modifier = ["modkey"]
+key = "KP_Begin"
+#parenleft
+
+[[keybind]]
+command = "GotoTag"
+value = "6"
+modifier = ["modkey"]
+key = "KP_Right"
+#minus
+
+[[keybind]]
+command = "GotoTag"
+value = "7"
+modifier = ["modkey"]
+key = "KP_Home"
+#egrave
+
+[[keybind]]
+command = "GotoTag"
+value = "8"
+modifier = ["modkey"]
+key = "KP_Up"
+#underscore
+
+[[keybind]]
+command = "GotoTag"
+value = "9"
+modifier = ["modkey"]
+key = "KP_Prior"
+#ccedilla
+
+[[keybind]]
+command = "MoveToTag"
+value = "1"
+modifier = ["modkey", "Shift"]
+key = "KP_End"
+#ampersand
+
+[[keybind]]
+command = "MoveToTag"
+value = "2"
+modifier = ["modkey", "Shift"]
+key = "KP_Down"
+#eacute
+
+[[keybind]]
+command = "MoveToTag"
+value = "3"
+modifier = ["modkey", "Shift"]
+key = "KP_Next"
+#quotedbl
+
+[[keybind]]
+command = "MoveToTag"
+value = "4"
+modifier = ["modkey", "Shift"]
+key = "KP_Left"
+#apostrophe
+
+[[keybind]]
+command = "MoveToTag"
+value = "5"
+modifier = ["modkey", "Shift"]
+key = "KP_Begin"
+#parenleft
+
+[[keybind]]
+command = "MoveToTag"
+value = "6"
+modifier = ["modkey", "Shift"]
+key = "KP_Right"
+#minus
+
+[[keybind]]
+command = "MoveToTag"
+value = "7"
+modifier = ["modkey", "Shift"]
+key = "KP_Home"
+#egrave
+
+[[keybind]]
+command = "MoveToTag"
+value = "8"
+modifier = ["modkey", "Shift"]
+key = "KP_Up"
+#underscore
+
+[[keybind]]
+command = "MoveToTag"
+value = "9"
+modifier = ["modkey", "Shift"]
+key = "KP_Prior"
+#ccedilla
+
+###################
+#programs
+[[keybind]]
+command = "Execute"
+value = "alacritty"
+modifier = ["modkey"]
+key = "Return"
+
+[[keybind]]
+command = "Execute"
+value = "dmenu_run"
+modifier = ["modkey"]
+key = "d"
+
+[[keybind]]
+command = "Execute"
+value = "brave"
+modifier = ["modkey"]
+key = "w"
+
+[[keybind]]
+command = "Execute"
+value = "thunar"
+modifier = ["modkey"]
+key = "r"
+
+[[keybind]]
+command = "Execute"
+value = "keepassxc"
+modifier = ["modkey"]
+key = "x"
+
+[[keybind]]
+command = "Execute"
+value = "thunderbird"
+modifier = ["modkey"]
+key = "e"
+
+[[keybind]]
+command = "Execute"
+value = "geany"
+modifier = ["modkey"]
+key = "c"
+
+[[keybind]]
+command = "Execute"
+value = "code"
+modifier = ["modkey", "Shift"]
+key = "c"
+
+###############
+#terminal program
+[[keybind]]
+command = "Execute"
+value = "alacritty -e ranger"
+modifier = ["modkey", "Shift"]
+key = "r"
+
+[[keybind]]
+command = "Execute"
+value = "alacritty -e ncmpcpp"
+modifier = ["modkey"]
+key = "m"
+
+[[keybind]]
+command = "Execute"
+value = "alacritty -e nvim -c VimwikiIndex"
+modifier = ["modkey"]
+key = "n"
+
+[[keybind]]
+command = "Execute"
+value = "alacritty -e newsboat"
+modifier = ["modkey", "Shift"]
+key = "n"
+
+[[keybind]]
+command = "Execute"
+value = "alacritty -e htop"
+modifier = ["modkey"]
+key = "h"
+
+##################
+#wifiConfig
+[[keybind]]
+command = "Execute"
+value = "alacritty -e sudo nmtui"
+modifier = ["Mod1"]
+key = "w"
+
+######################
+#sccrenshot
+[[keybind]]
+command = "Execute"
+value = "maim pic-full-$(date '+%y%m%d-%H%M-%S').png"
+modifier = ["modkey"]
+key = "Print"
+
+[[keybind]]
+command = "Execute"
+value = "/home/fouad/.local/bin/maimpick"
+modifier = ["modkey","Shift"]
+key = "Print"
+
+####################
+#dmenuScripts
+[[keybind]]
+command = "Execute"
+value = "/home/fouad/.local/bin/dmenumount"
+modifier = ["modkey"]
+key = "F9"     
+
+[[keybind]]
+command = "Execute"
+value = "/home/fouad/.local/bin/dmenuumount"
+modifier = ["modkey"]
+key = "F10"
+
+[[keybind]]
+command = "Execute"
+value = "/home/fouad/.local/bin/dmenuunicode"
+modifier = ["modkey"]
+key = "ampersand"
+
+[[keybind]]
+command = "Execute"
+value = "/home/fouad/.local/bin/dmenurecord"
+modifier = ["Mod1"]
+key = "Print"
+
+[[keybind]]
+command = "Execute"
+value = "/home/fouad/.local/bin/dmenurecord"
+modifier = ["Mod1", "Shift"]
+key = "Print"
+
+[[keybind]]
+command = "Execute"
+value = "/home/fouad/.local/bin/dmenuwebsearch"
+modifier = ["modkey"]
+key = "s"
+
+[[keybind]]
+command = "Execute"
+value = "/home/fouad/.local/bin/dmconf"
+modifier = ["modkey"]
+key = "v"
+
+##################
+#syscat
+[[keybind]]
+command = "Execute"
+value = "/home/fouad/.local/bin/sysact"
+modifier = ["modkey"]
+key = "BackSpace"
+
+###############
+#sound
+[[keybind]]
+command = "Execute"
+value = "alacritty -e pulsemixer; kill -44"
+modifier = ["modkey"]
+key = "F4"
+
+[[keybind]]
+command = "Execute"
+value = "pamixer --allow-boost -d 5; kill -44"
+modifier = ["modkey"]
+key = "Down"
+
+[[keybind]]
+command = "Execute"
+value = "pamixer --allow-boost -i 5; kill -44"
+modifier = ["modkey"]
+key = "Up"
+
+[[keybind]]
+command = "Execute"
+value = "pamixer -t; kill -44m"
+modifier = ["modkey", "Shift"]
+key = "m"
+
+[[keybind]]
+command = "Execute"
+value = "mpc toggle"
+modifier = ["modkey"]
+key = "p"
+
+###########################
+#Brightnes
+
+[[keybind]]
+command = "Execute"
+value = "xbacklight -inc 15"
+modifier = ["modkey"]
+key = "Prior"
+
+[[keybind]]
+command = "Execute"
+value = "xbacklight -dec 15"
+modifier = ["modkey"]
+key = "Next"
+
+###############
+#multimediakeys
+
+[[keybind]]
+command = "Execute"
+value = "xbacklight -inc 15"
+modifier = []
+key = "XF86XK_MonBrightnessUp"
+
+[[keybind]]
+command = "Execute"
+value = "xbacklight -dec 15"
+modifier = []
+key = "XF86XK_MonBrightnessDown"
+
+[[keybind]]
+command = "Execute"
+value = "kcalc"
+modifier = []
+key = "XF86XK_Calculator"
+
+[[keybind]]
+command = "Execute"
+value = "pamixer --allow-boost -d 3; kill -44"
+modifier = []
+key = "XF86XK_AudioLowerVolume"
+
+[[keybind]]
+command = "Execute"
+value = "pamixer --allow-boost -i 3; kill -44"
+modifier = []
+key = "XF86XK_AudioRaiseVolume"
+
+[[keybind]]
+command = "Execute"
+value = "pamixer -t; kill -44q"
+modifier = []
+key = "XF86XK_AudioMute"
